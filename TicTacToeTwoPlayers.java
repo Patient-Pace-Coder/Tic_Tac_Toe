@@ -2,8 +2,6 @@ package Games;
 
 import java.util.Scanner;
 
-// my own implementation
-
 public class TicTacToeTwoPlayers {
 
     public static void displayBoard(int[][] board){
@@ -52,7 +50,7 @@ public class TicTacToeTwoPlayers {
                 }
             }
             System.out.println();
-//            displayBoard(board);
+
 
             if(!haveWon(board) && !isFull(board)) {
 
@@ -125,14 +123,6 @@ public class TicTacToeTwoPlayers {
                 if(board[i%3][i%3]== 2 && board[(i+1)%3][(i+1)%3]==2 && board[(i+2)%3][(i+2)%3]==2){
                     return true;
                 }
-
-//                if(board[i%3][i%3]== 1 && board[(i-1)%3][(i-1)%3]==1 && board[(i-2)%3][(i-2)%3]==1){
-//                    return true;
-//                }
-//
-//                if(board[i%3][i%3]== 2 && board[(i+1)%3][(i+1)%3]==2 && board[(i+2)%3][(i+2)%3]==2){
-//                    return true;
-//                }
 
         }
 
